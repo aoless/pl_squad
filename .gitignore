@@ -1,3 +1,4 @@
 .env
-pl_squad/.python-version
-pl_squad/__pycache__/
+.python-version
+__pycache__/
+*.py[cod]
