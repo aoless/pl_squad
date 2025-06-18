@@ -1,0 +1,596 @@
+{
+  "19465": [
+    {
+      "player": {
+        "id": 19465,
+        "name": "David Raya",
+        "firstname": "David",
+        "lastname": "Raya Martin",
+        "age": 30,
+        "birth": {
+          "date": "1995-09-15",
+          "place": "Barcelona",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "183 cm",
+        "weight": "80 kg",
+        "number": 22,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/19465.png"
+      }
+    }
+  ],
+  "912": [
+    {
+      "player": {
+        "id": 912,
+        "name": "Neto",
+        "firstname": "Norberto",
+        "lastname": "Murara Neto",
+        "age": 36,
+        "birth": {
+          "date": "1989-07-19",
+          "place": "Araxá",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "190 cm",
+        "weight": "84 kg",
+        "number": 1,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/912.png"
+      }
+    }
+  ],
+  "342243": [
+    {
+      "player": {
+        "id": 342243,
+        "name": "T. Setford",
+        "firstname": "Tommy",
+        "lastname": "Hogan Setford",
+        "age": 19,
+        "birth": {
+          "date": "2006-03-13",
+          "place": "Haarlem",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "185 cm",
+        "weight": "76 kg",
+        "number": 1,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/342243.png"
+      }
+    }
+  ],
+  "337933": [
+    {
+      "player": {
+        "id": 337933,
+        "name": "Alexei Rojas Fedorushchenko",
+        "firstname": "Alexei",
+        "lastname": "Rojas Fedorushchenko",
+        "age": 20,
+        "birth": {
+          "date": "2005-09-28",
+          "place": "Basildon",
+          "country": "Colombia"
+        },
+        "nationality": "Colombia",
+        "height": "186 cm",
+        "weight": "77 kg",
+        "number": 21,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/337933.png"
+      }
+    }
+  ],
+  "416697": [
+    {
+      "player": {
+        "id": 416697,
+        "name": "J. Porter",
+        "firstname": "Jack",
+        "lastname": "Porter",
+        "age": 17,
+        "birth": {
+          "date": "2008-07-15",
+          "place": "Chelmsford",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "187 cm",
+        "weight": "75 kg",
+        "number": 92,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/416697.png"
+      }
+    }
+  ],
+  "22090": [
+    {
+      "player": {
+        "id": 22090,
+        "name": "W. Saliba",
+        "firstname": "William Alain André Gabriel",
+        "lastname": "Saliba",
+        "age": 24,
+        "birth": {
+          "date": "2001-03-24",
+          "place": "Bondy",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "192 cm",
+        "weight": "92 kg",
+        "number": 2,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/22090.png"
+      }
+    }
+  ],
+  "1117": [
+    {
+      "player": {
+        "id": 1117,
+        "name": "K. Tierney",
+        "firstname": "Kieran",
+        "lastname": "Tierney",
+        "age": 28,
+        "birth": {
+          "date": "1997-06-05",
+          "place": "Douglas",
+          "country": "Scotland"
+        },
+        "nationality": "Scotland",
+        "height": "178 cm",
+        "weight": "70 kg",
+        "number": 3,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/1117.png"
+      }
+    }
+  ],
+  "19959": [
+    {
+      "player": {
+        "id": 19959,
+        "name": "B. White",
+        "firstname": "Benjamin William",
+        "lastname": "White",
+        "age": 28,
+        "birth": {
+          "date": "1997-10-08",
+          "place": "Poole",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "186 cm",
+        "weight": "76 kg",
+        "number": 4,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/19959.png"
+      }
+    }
+  ],
+  "22224": [
+    {
+      "player": {
+        "id": 22224,
+        "name": "Gabriel Magalhães",
+        "firstname": "Gabriel",
+        "lastname": "dos Santos Magalhães",
+        "age": 28,
+        "birth": {
+          "date": "1997-12-19",
+          "place": "São Paulo",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "190 cm",
+        "weight": "78 kg",
+        "number": 6,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/22224.png"
+      }
+    }
+  ],
+  "38746": [
+    {
+      "player": {
+        "id": 38746,
+        "name": "J. Timber",
+        "firstname": "Jurriën David Norman",
+        "lastname": "Timber",
+        "age": 24,
+        "birth": {
+          "date": "2001-06-17",
+          "place": "Utrecht",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "179 cm",
+        "weight": "79 kg",
+        "number": 12,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/38746.png"
+      }
+    }
+  ],
+  "18959": [
+    {
+      "player": {
+        "id": 18959,
+        "name": "Robert Sánchez",
+        "firstname": "Robert",
+        "lastname": "Lynch Sánchez",
+        "age": 28,
+        "birth": {
+          "date": "1997-11-18",
+          "place": "Cartagena",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "197 cm",
+        "weight": "90 kg",
+        "number": 1,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/18959.png"
+      }
+    }
+  ],
+  "286616": [
+    {
+      "player": {
+        "id": 286616,
+        "name": "F. Jörgensen",
+        "firstname": "Filip",
+        "lastname": "Jörgensen",
+        "age": 23,
+        "birth": {
+          "date": "2002-04-16",
+          "place": null,
+          "country": "Sweden"
+        },
+        "nationality": "Denmark",
+        "height": "190 cm",
+        "weight": "85 kg",
+        "number": 12,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/286616.png"
+      }
+    }
+  ],
+  "19012": [
+    {
+      "player": {
+        "id": 19012,
+        "name": "M. Bettinelli",
+        "firstname": "Marcus",
+        "lastname": "Bettinelli",
+        "age": 33,
+        "birth": {
+          "date": "1992-05-24",
+          "place": "Camberwell",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "193 cm",
+        "weight": "82 kg",
+        "number": 13,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/19012.png"
+      }
+    }
+  ],
+  "298061": [
+    {
+      "player": {
+        "id": 298061,
+        "name": "Ted Curd",
+        "firstname": "Ted",
+        "lastname": "Curd",
+        "age": 19,
+        "birth": {
+          "date": "2006-02-14",
+          "place": "London",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "190 cm",
+        "weight": null,
+        "number": 13,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/298061.png"
+      }
+    }
+  ],
+  "152955": [
+    {
+      "player": {
+        "id": 152955,
+        "name": "L. Bergström",
+        "firstname": "Lucas Carl Edvard",
+        "lastname": "Bergström",
+        "age": 23,
+        "birth": {
+          "date": "2002-09-05",
+          "place": "Pargas",
+          "country": "Finland"
+        },
+        "nationality": "Finland",
+        "height": "205 cm",
+        "weight": "82 kg",
+        "number": 47,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/152955.png"
+      }
+    }
+  ],
+  "303667": [
+    {
+      "player": {
+        "id": 303667,
+        "name": "E. Beach",
+        "firstname": "Edward James",
+        "lastname": "Beach",
+        "age": 22,
+        "birth": {
+          "date": "2003-10-09",
+          "place": null,
+          "country": "England"
+        },
+        "nationality": "Wales",
+        "height": "196 cm",
+        "weight": "72 kg",
+        "number": 16,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/303667.png"
+      }
+    }
+  ],
+  "47380": [
+    {
+      "player": {
+        "id": 47380,
+        "name": "Marc Cucurella",
+        "firstname": "Marc",
+        "lastname": "Cucurella Saseta",
+        "age": 27,
+        "birth": {
+          "date": "1998-07-22",
+          "place": "Alella",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "172 cm",
+        "weight": "66 kg",
+        "number": 3,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/47380.png"
+      }
+    }
+  ],
+  "19145": [
+    {
+      "player": {
+        "id": 19145,
+        "name": "T. Adarabioyo",
+        "firstname": "Abdul-Nasir Oluwatosin",
+        "lastname": "Oluwadoyinsolami Adarabioyo",
+        "age": 28,
+        "birth": {
+          "date": "1997-09-24",
+          "place": "Manchester",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "196 cm",
+        "weight": "80 kg",
+        "number": 4,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/19145.png"
+      }
+    }
+  ],
+  "95": [
+    {
+      "player": {
+        "id": 95,
+        "name": "B. Badiashile",
+        "firstname": "Benoît Ntambue",
+        "lastname": "Badiashile Mukinayi Baya",
+        "age": 24,
+        "birth": {
+          "date": "2001-03-26",
+          "place": "Limoges",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "194 cm",
+        "weight": "75 kg",
+        "number": 5,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/95.png"
+      }
+    }
+  ],
+  "152953": [
+    {
+      "player": {
+        "id": 152953,
+        "name": "L. Colwill",
+        "firstname": "Levi Lemar",
+        "lastname": "Samuels Colwill",
+        "age": 22,
+        "birth": {
+          "date": "2003-02-26",
+          "place": null,
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "187 cm",
+        "weight": "83 kg",
+        "number": 4,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/152953.png"
+      }
+    }
+  ],
+  "280": [
+    {
+      "player": {
+        "id": 280,
+        "name": "Alisson Becker",
+        "firstname": "Alisson Ramsés",
+        "lastname": "Becker",
+        "age": 33,
+        "birth": {
+          "date": "1992-10-02",
+          "place": "Novo Hamburgo",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "193 cm",
+        "weight": "91 kg",
+        "number": 1,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/280.png"
+      }
+    }
+  ],
+  "162687": [
+    {
+      "player": {
+        "id": 162687,
+        "name": "V. Jaroš",
+        "firstname": "Vítězslav",
+        "lastname": "Jaroš",
+        "age": 24,
+        "birth": {
+          "date": "2001-07-23",
+          "place": "Příbram",
+          "country": "Czechia"
+        },
+        "nationality": "Czechia",
+        "height": "190 cm",
+        "weight": "88 kg",
+        "number": 1,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/162687.png"
+      }
+    }
+  ],
+  "281": [
+    {
+      "player": {
+        "id": 281,
+        "name": "C. Kelleher",
+        "firstname": "Caoimhín Odhrán",
+        "lastname": "Kelleher",
+        "age": 27,
+        "birth": {
+          "date": "1998-11-23",
+          "place": "Cork",
+          "country": "Republic of Ireland"
+        },
+        "nationality": "Republic of Ireland",
+        "height": "188 cm",
+        "weight": "74 kg",
+        "number": 62,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/281.png"
+      }
+    }
+  ],
+  "180316": [
+    {
+      "player": {
+        "id": 180316,
+        "name": "H. Davies",
+        "firstname": "Harvey",
+        "lastname": "Davies",
+        "age": 22,
+        "birth": {
+          "date": "2003-09-03",
+          "place": "Liverpool",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "190 cm",
+        "weight": "77 kg",
+        "number": 1,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/180316.png"
+      }
+    }
+  ],
+  "284": [
+    {
+      "player": {
+        "id": 284,
+        "name": "J. Gomez",
+        "firstname": "Joseph Dave",
+        "lastname": "Gomez",
+        "age": 28,
+        "birth": {
+          "date": "1997-05-23",
+          "place": "London",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "188 cm",
+        "weight": "80 kg",
+        "number": 2,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/284.png"
+      }
+    }
+  ],
+  "290": [
+    {
+      "player": {
+        "id": 290,
+        "name": "V. van Dijk",
+        "firstname": "Virgil",
+        "lastname": "van Dijk",
+        "age": 34,
+        "birth": {
+          "date": "1991-07-08",
+          "place": "Breda",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "195 cm",
+        "weight": "92 kg",
+        "number": 4,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/290.png"
+      }
+    }
+  ],
+  "1145": [
+    {
+      "player": {
+        "id": 1145,
+        "name": "I. Konaté",
+        "firstname": "Ibrahima",
+        "lastname": "Konaté",
+        "age": 26,
+        "birth": {
+          "date": "1999-05-25",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "194 cm",
+        "weight": "95 kg",
+        "number": 5,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/1145.png"
+      }
+    }
+  ]
+}

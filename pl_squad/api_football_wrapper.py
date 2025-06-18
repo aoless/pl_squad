@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 import time
 from typing import Any, Dict, List, Union
@@ -20,6 +21,10 @@ Json = Union[Dict[str, Any], List[Any]]
 ### Configuration
 
 load_dotenv()
+
+CACHE_DIR = "cache"
+SQUAD_CACHE = os.path.join(CACHE_DIR, "cache_squads.json")
+PLAYER_CACHE = os.path.join(CACHE_DIR, "cache_players.json")
 
 API_KEY = os.getenv("RAPIDAPI_KEY")
 if not API_KEY:
@@ -48,6 +53,16 @@ session.headers.update(
         "Accept": "application/json",
     }
 )
+
+### Helpers
+
+
+def _load_json_cache(path: str) -> dict:
+    if not os.path.exists(path):
+        logger.warning("Cache file not found: {}", path)
+        return {}
+    with open(path, "r") as f:
+        return json.load(f)
 
 
 @retry(
@@ -86,35 +101,55 @@ def _request_json(endpoint: str, params: Dict[str, Any] | None = None) -> Json:
             time.sleep(sleep_for)
 
 
-def get_team_squad(team_id: int, season: int | None = None) -> List[Json]:
+def get_team_squad(
+    team_id: int, season: int | None = None, dev_mode: bool = False
+) -> List[Json]:
+    if dev_mode:
+        squads = _load_json_cache(SQUAD_CACHE)
+        key = f"{team_id}" + (f"_{season}" if season is not None else "")
+        if key not in squads:
+            raise KeyError(f"No squad data for team {key} in cache.")
+        return [squads[key][0]]
+
     params: Dict[str, Any] = {"team": team_id}
     if season is not None:
         params["season"] = season
     return _request_json("players/squads", params)
 
 
-def get_player_details(player_id: int) -> List[Json]:
+def get_player_details(player_id: int, dev_mode: bool = False) -> List[Json]:
+    if dev_mode:
+        players = _load_json_cache(PLAYER_CACHE)
+        key = str(player_id)
+        if key not in players:
+            raise KeyError(f"No player data for ID {key} in cache.")
+        return players[key]
+
     return _request_json("players/profiles", {"player": player_id})
 
 
-def get_team_details(team_id: int, season: int | None = None) -> List[List[Json]]:
-    squad = get_team_squad(team_id, season)
-    players = squad[0].get("players", []) if squad else []
-    return [get_player_details(p["id"]) for p in players]
+def get_team_details(
+    team_id: int, season: int | None = None, dev_mode: bool = False
+) -> List[List[Json]]:
+    squad = get_team_squad(team_id, season, dev_mode)
+    players = squad[0].get("players", [])[:10] if squad else []
+    return [get_player_details(p["id"], dev_mode) for p in players]
 
 
 if __name__ == "__main__":
-    TEAM_ID = 33  # PSG
-    PLAYER_ID = 50132  # Altay Bayındır
+    TEAM_ID = 42  # Arsenal
+    PLAYER_ID = 19465  # David Raya
+
+    dev_mode = True
 
     logger.info("Fetching squad for team {}", TEAM_ID)
-    squad = get_team_squad(TEAM_ID)
+    squad = get_team_squad(TEAM_ID, dev_mode=dev_mode)
     logger.info("Squad size: {}", len(squad[0]["players"]))
 
     logger.info("Fetching details for player {}", PLAYER_ID)
-    player_details = get_player_details(PLAYER_ID)
+    player_details = get_player_details(PLAYER_ID, dev_mode=dev_mode)
     logger.info(player_details)
 
     logger.info("Fetching full team details...")
-    profiles = [1, 2, 3]  # get_team_details(TEAM_ID)
+    profiles = get_team_details(TEAM_ID, dev_mode=dev_mode)
     logger.info("Fetched {} player profiles", len(profiles))
