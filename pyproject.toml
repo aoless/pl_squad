@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pl_squad"
+version = "0.1"
+description = ""
+authors = ["Amadeusz Oleszczak <aoleszczak@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.13.5"
+loguru = "^0.7.2"
+numpy = "^1.26.4"
+poethepoet = "0.34.0"
+torch = "2.6.0"
+pandas = "2.2.3"
+pyrate-limiter = "3.7.1"
+
+# Feature engineering
+langchain = "^0.2.11"
+sentence-transformers = "^3.0.0"
+
+# RAG
+langchain-openai = "^0.1.3"
+langchain-community = "^0.2.11"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.9"
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+
+
+# ----------------------------------
+# --- Poe the Poet Configuration ---
+# ----------------------------------
+ipykernel = "^6.29.5"
+
+[tool.poe.tasks]
+# QA
+lint-check = "poetry run ruff check ."
+format-check = "poetry run ruff format --check ."
