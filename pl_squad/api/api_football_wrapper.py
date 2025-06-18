@@ -14,8 +14,8 @@ from tenacity import (
     wait_random_exponential,
 )
 
-from config.settings import API_KEY
-from utils import Json
+from pl_squad.config import API_KEY
+from pl_squad.utils import Json
 
 RAPIDAPI_HOST = "api-football-v1.p.rapidapi.com"
 BASE_URL = f"https://{RAPIDAPI_HOST}/v3"

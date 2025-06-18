@@ -1,6 +1,10 @@
 from loguru import logger
 
-from tools.tools import get_player_details, get_team_details, get_team_squad
+from pl_squad.tools import (
+    get_full_team_details,
+    get_player_details,
+    get_team_squad,
+)
 
 if __name__ == "__main__":
     TEAM_ID = 42  # Arsenal
@@ -17,5 +21,5 @@ if __name__ == "__main__":
     logger.info(player_details)
 
     logger.info("Fetching full team details...")
-    profiles = get_team_details(TEAM_ID, dev_mode=dev_mode)
+    profiles = get_full_team_details(TEAM_ID, dev_mode=dev_mode)
     logger.info("Fetched {} player profiles", len(profiles))
