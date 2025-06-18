@@ -97,16 +97,14 @@ def get_player_details(player_id: int) -> List[Json]:
     return _request_json("players/profiles", {"player": player_id})
 
 
-def get_team_details(
-    team_id: int, season: int | None = None
-) -> List[List[Json]]:
+def get_team_details(team_id: int, season: int | None = None) -> List[List[Json]]:
     squad = get_team_squad(team_id, season)
     players = squad[0].get("players", []) if squad else []
     return [get_player_details(p["id"]) for p in players]
 
 
 if __name__ == "__main__":
-    TEAM_ID = 33     # PSG
+    TEAM_ID = 33  # PSG
     PLAYER_ID = 50132  # Altay Bayındır
 
     logger.info("Fetching squad for team {}", TEAM_ID)
@@ -118,5 +116,5 @@ if __name__ == "__main__":
     logger.info(player_details)
 
     logger.info("Fetching full team details...")
-    profiles = [1, 2, 3] #get_team_details(TEAM_ID)
+    profiles = [1, 2, 3]  # get_team_details(TEAM_ID)
     logger.info("Fetched {} player profiles", len(profiles))
