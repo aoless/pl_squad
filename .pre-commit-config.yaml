@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.9
+    hooks:
+      - id: ruff
+        name: Ruff Linter
+
+      - id: ruff-format
+        name: Ruff Formatter
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.0.0
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+        language_version: python3.11
+        additional_dependencies: ["toml"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: debug-statements
