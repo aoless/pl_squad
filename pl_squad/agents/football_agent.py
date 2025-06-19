@@ -85,7 +85,7 @@ agent_executor = AgentExecutor(agent=agent, tools=TOOLS, verbose=True)
 def answer_football_question(question: str) -> str:  # noqa: D401
     """Return the agent’s answer (or refusal)."""
 
-    logger.info("Agent invoked with question: %s", question)
+    logger.info(f"Agent invoked with question: {question}")
     result = agent_executor.invoke({"input": question})
     return result["output"]
 
