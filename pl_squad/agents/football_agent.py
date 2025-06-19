@@ -56,6 +56,8 @@ Always use tools to retrieve information. Rely solely on data provided by these 
 Assume the API always returns complete data - do not supplement it with guesses or external sources
 Important: Whenever referencing a player, Final Answer must include their **full name** (first and last), **birthdate**, and **playing position**.
 
+DO NOT shorten the answer, if asked to provide a list of players, provide the full list with all the information.
+
 Answer the following questions as best you can. You have access to the following tools:
 
 {tools}
