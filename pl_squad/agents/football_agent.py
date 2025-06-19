@@ -91,7 +91,7 @@ def answer_football_question(question: str) -> str:  # noqa: D401
 
 
 if __name__ == "__main__":
-    print("⚽  Premier‑League Q&A REPL (Ctrl‑C to exit)")
+    print("⚽ Premier‑League Q&A REPL (Ctrl‑C to exit)")
     while True:
         try:
             _q = input("PL_SQUAD › ")
