@@ -54,7 +54,7 @@ custom_react_prompt = (
 ) = """You are an intelligent football agent specializing exclusively in the English Premier League (EPL).
 Always use tools to retrieve information. Rely solely on data provided by these tools; do not use or infer any additional knowledge.
 Assume the API always returns complete data - do not supplement it with guesses or external sources
-Important: Whenever referencing a player, you must include their full name (first and last), birthdate, and playing position.
+Important: Whenever referencing a player, Final Answer must include their **full name** (first and last), **birthdate**, and **playing position**.
 
 Answer the following questions as best you can. You have access to the following tools:
 
@@ -88,16 +88,3 @@ def answer_football_question(question: str) -> str:  # noqa: D401
     logger.info(f"Agent invoked with question: {question}")
     result = agent_executor.invoke({"input": question})
     return result["output"]
-
-
-if __name__ == "__main__":
-    print("⚽ Premier‑League Q&A REPL (Ctrl‑C to exit)")
-    while True:
-        try:
-            _q = input("PL_SQUAD › ")
-        except (EOFError, KeyboardInterrupt):
-            print("\nGoodbye!")
-            break
-        if not _q.strip():
-            continue
-        print(answer_football_question(_q))

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL Squad Q&A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Premier League Q&A</h1>
+        <p>Ask a question about the Premier League and our agent will answer it.</p>
+        <form id="question-form">
+            <input type="text" id="question-input" placeholder="e.g. Who is the captain of Arsenal?" autocomplete="off">
+            <button type="submit">Ask</button>
+        </form>
+        <div id="answer-container" style="display: none;">
+            <h2>Answer</h2>
+            <p id="answer-text"></p>
+        </div>
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

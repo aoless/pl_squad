@@ -22,6 +22,8 @@ sentence-transformers = "^3.0.0"
 # Agents
 langchain-openai = "^0.3.24"
 langchain-community = "^0.3.25"
+fastapi = "^0.115.13"
+uvicorn = "^0.34.3"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.4.9"
@@ -39,6 +41,7 @@ ipykernel = "^6.29.5"
 # QA
 lint-check = "poetry run ruff check ."
 format-check = "poetry run ruff format --check ."
+web = "poetry run uvicorn pl_squad.web.main:app --reload"
 
 [tool.isort]
 profile = "black"
