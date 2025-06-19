@@ -131,6 +131,18 @@ button:hover {
     }
 }
 
+#facts-container {
+    margin-top: 1.5rem;
+    font-style: italic;
+    min-height: 40px; /* Prevents layout shifts */
+}
+
+#fact-text {
+    margin: 0;
+    color: #a0a0a0;
+    transition: opacity 0.5s ease;
+}
+
 .player-card {
     background: #3b3b3b;
     border: 1px solid var(--border-color);

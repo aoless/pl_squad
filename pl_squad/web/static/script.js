@@ -4,6 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerContainer = document.getElementById('answer-container');
     const answerText = document.getElementById('answer-text');
     const loading = document.getElementById('loading');
+    const factText = document.getElementById('fact-text');
+
+    const footballFacts = [
+        "The first FIFA World Cup was held in 1930 in Uruguay.",
+        "A single football player runs about 7 miles during an entire game.",
+        "The fastest goal ever scored was in 2.4 seconds by Nawaf Al-Abed.",
+        "Sheffield F.C. is the oldest professional football club in the world, founded in 1857.",
+        "The Premier League was founded in 1992.",
+        "Brazil is the only country to have participated in every World Cup.",
+        "The record for the most red cards in a single match is 36.",
+        "The original World Cup trophy was stolen in 1966 and found by a dog named Pickles.",
+        "The highest-scoring football game was 149-0 in a match in Madagascar.",
+        "Pelé is the only player in history to have won three World Cups."
+    ];
+
+    let factInterval;
 
     const renderAnswer = (answer) => {
         answerText.innerHTML = ''; // Clear previous answer
@@ -54,6 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
         answerContainer.style.display = 'none';
         loading.style.display = 'block';
 
+        factInterval = setInterval(() => {
+            const randomIndex = Math.floor(Math.random() * footballFacts.length);
+            factText.style.opacity = 0;
+            setTimeout(() => {
+                factText.textContent = `Did you know? ${footballFacts[randomIndex]}`;
+                factText.style.opacity = 1;
+            }, 500);
+        }, 3000);
+        // Initial fact
+        factText.textContent = `Did you know? ${footballFacts[Math.floor(Math.random() * footballFacts.length)]}`;
+
         try {
             const response = await fetch('/api/ask', {
                 method: 'POST',
@@ -76,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answerContainer.style.display = 'block';
         } finally {
             loading.style.display = 'none';
+            clearInterval(factInterval);
         }
     });
 });
