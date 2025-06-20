@@ -4,15 +4,15 @@ import json
 from pathlib import Path
 from typing import Dict, List
 
-from pl_squad.tools import get_player_details, get_team_squad
+from pl_squad.tools import _get_team_squad, get_player_details
 
 CLUBS: Dict[int, str] = {
     42: "Arsenal",
     33: "Manchester United",
 }
 
-SQUAD_CACHE_FILE = Path("cache_squads.json")
-PLAYER_CACHE_FILE = Path("cache_players.json")
+SQUAD_CACHE_FILE = Path("cache/cache_squads.json")
+PLAYER_CACHE_FILE = Path("cache/cache_players.json")
 
 
 def _load_cache(path: Path) -> Dict:
@@ -33,7 +33,7 @@ def fetch() -> None:
             squad_payload = squad_cache[str(team_id)]
         else:
             print(f"🌐 {club_name}: fetching squad …")
-            squad_payload = get_team_squad(team_id, dev_mode=False)
+            squad_payload = _get_team_squad(team_id, dev_mode=False)
             squad_cache[str(team_id)] = squad_payload
             _save_cache(squad_cache, SQUAD_CACHE_FILE)
 

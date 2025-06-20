@@ -37,11 +37,7 @@ def _get_team_squad(
             raise KeyError(f"No squad data for team {key} in cache.")
         return squads[key]
 
-    params: Dict[str, Any] = {"team": team_id}
-    if season is None:
-        params["season"] = 2024
-
-    return request_json("players/squads", params)
+    return request_json("players/squads", {"team": team_id})
 
 
 def get_player_details(player_id: int, dev_mode: bool = True) -> List[Json]:
@@ -97,18 +93,18 @@ if __name__ == "__main__":
     squad = _get_team_squad(TEAM_ID, dev_mode=dev_mode)
     logger.info("Squad size: {}", len(squad[0]["players"]))
 
-    logger.info("Fetching details for player {}", PLAYER_ID)
-    player_details = get_player_details(PLAYER_ID, dev_mode=dev_mode)
-    logger.info(player_details)
+    # logger.info("Fetching details for player {}", PLAYER_ID)
+    # player_details = get_player_details(PLAYER_ID, dev_mode=dev_mode)
+    # logger.info(player_details)
 
-    logger.info("Fetching full team details...")
-    profiles = get_full_team_details(TEAM_ID, dev_mode=True)
-    logger.info("Fetched {} player profiles", len(profiles))
+    # logger.info("Fetching full team details...")
+    # profiles = get_full_team_details(TEAM_ID, dev_mode=True)
+    # logger.info("Fetched {} player profiles", len(profiles))
 
-    logger.info("Listing all clubs from Premier League...")
-    team_data = list_clubs(2024, dev_mode=dev_mode)
-    logger.info("Premier League clubs: {}", team_data)
+    # logger.info("Listing all clubs from Premier League...")
+    # team_data = list_clubs(2024, dev_mode=dev_mode)
+    # logger.info("Premier League clubs: {}", team_data)
 
-    logger.info("Searching for player by name...")
-    player_data = search_player("Robert Lewandowski", dev_mode=dev_mode)
-    logger.info("Player data: {}", player_data)
+    # logger.info("Searching for player by name...")
+    # player_data = search_player("Robert Lewandowski", dev_mode=dev_mode)
+    # logger.info("Player data: {}", player_data)
